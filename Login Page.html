@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        .layout{
+            border: solid white;
+            background-color: white;
+            text-align: center;
+            width: 368px;
+            margin: auto;
+            margin-top: 182px;
+            padding: 0 0 42px 0;
+        }
+        .input{
+            width: 246px;
+            height: 25px;
+            border: navajowhite;
+            background-color: #EBEDEF;
+            padding: 8px;
+        }
+        .button{
+            width: 261px;
+            height: 41px;
+            background-color: rgb(62, 182, 91);
+            border: none;
+            color: white;
+        }
+        .inline{
+            display: inline;
+        }
+    </style>
+</head>
+<body bgcolor="#3EB65B">
+    
+        <form class="layout">
+            <h1>LOGIN</h1>
+            <div>Please enter your credentials to login</div> <br>
+            <div>
+                <input class="input" type="text" name="name" placeholder="username" pattern="[a-zA-Z ]{3,15}" required>
+            </div> <br>
+            <div >
+                <input class="input" type="password" name="pass" placeholder="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,10}$">
+            </div> <br>
+            <button class="button" type="submit">Login</button> <br> <br>
+            <div class="inline" style="color: darkgray;">Not registered? <div class="inline" style="color: #3EB65B;">Create an account</div></div>
+        </form>
+
+</body>
+</html>
